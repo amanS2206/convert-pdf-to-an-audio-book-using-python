@@ -14,3 +14,8 @@ pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
 
 # get the number of pages
 pages = pdfReader.numPages
+
+# create the pdfPlumber object
+
+with pdfplumber.open(file) as pdf:
+    print(pdf)
