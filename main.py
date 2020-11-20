@@ -18,4 +18,7 @@ pages = pdfReader.numPages
 # create the pdfPlumber object
 
 with pdfplumber.open(file) as pdf:
-    print(pdf)
+    for i in range(0, pages):
+        page = pdf.pages[i]
+        text = page.extract_text()
+        print(text)
