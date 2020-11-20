@@ -11,3 +11,6 @@ pdfFileObj = open(file,'rb')
 
 # create the pdf file reader object
 pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
+
+# get the number of pages
+pages = pdfReader.numPages
