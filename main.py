@@ -8,3 +8,6 @@ file = 'p.pdf'
 
 # create the pdf fie object
 pdfFileObj = open(file,'rb')
+
+# create the pdf file reader object
+pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
